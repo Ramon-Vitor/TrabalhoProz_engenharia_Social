@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faça login</title>
-    <script src="src/scripts/app.js"></script>
     <link rel="stylesheet" href="src/styles/qrcodePage.css">
-  </head>
-  <body>
+</head>
+<body>
     <h1>Faça login</h1>
     <p>
-      Por favor, faça login na rede utilizando seu e-mail.
+        Por favor, faça login na rede utilizando seu e-mail.
     </p>
-
+    
     <div class="formulario">
-      <form action="">
-        <input type="text" placeholder="Digite seu e-mail" />
-        <input type="password" placeholder="Digite sua senha"/>
-        <button id="btn">Entrar</button>
-      </form>
+        <form id="loginForm">
+            <input id="email" type="text" placeholder="Digite seu e-mail" />
+            <input id="senha" type="password" placeholder="Digite sua senha"/>
+            <button type="submit">Entrar</button>
+        </form>
     </div>
-  </body>
+    <script src="src/scripts/app.js"></script>
+</body>
 </html>

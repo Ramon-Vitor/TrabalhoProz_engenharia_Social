@@ -12,3 +12,18 @@ document.addEventListener("DOMContentLoaded", function(){
             correctLevel: QRCode.CorrectLevel.H
         })
 })
+
+const formulario = document.getElementById("loginForm")
+
+formulario.addEventListener('submit', async function(e) {
+    e.preventDefault(); 
+
+    const email = document.getElementById("email").value
+    const senha = document.getElementById("senha").value
+
+    if (email !== "" && senha !== "") {
+        alert("Atenção: verifique se você está em um ambiente seguro antes de inserir suas informações pessoais.");
+    } else {
+        alert("Por favor, preencha todos os campos.");
+    }
+});
