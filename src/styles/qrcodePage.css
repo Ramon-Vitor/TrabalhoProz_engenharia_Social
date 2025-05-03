@@ -1,23 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap");
 
 main {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/src/images/background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Sora", sans-serif;
+  color: #7b7698;
+  text-align: center;
+  height: 100vh;
+  wghth: 100vw;
+}
+
+.logo{
+  position: absolute;
+  top: 5%;
+  left: 5.5%;
+}
+
+.copy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  height: 80vh;
+  width: 50vw;
+}
+
+.copy h1{
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: transparent;
+  background-image: linear-gradient(to right, #cba9ff, #e7b9ae);
+  background-clip: text;
+}
+
+.copy-text{
+  margin: 1vw 0px;
+}
+
+.copy-text p{
+  margin: 5px 0px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  padding: 0px;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Sora", sans-serif;
-  color: #7B7698;
-  text-align: center;
+  justify-content: space-around;
+  height: 80vh;
+  width: 30vw;
+  background-color: #e4e4e5;
+  border-radius: 30px;
 }
 
-.title h1{
-  color: #53388E;
+.title h1 {
+  color: #53388e;
+  font-size: 2rem;
+  font-style: bold;
+  font-weight: 700;
+  padding: 20px 0px;
 }
 
-.title a{
-  text-decoration: none;
-  color: #53388E;
+main p {
+  font-size: 1.6rem;
+  textwarp: wrap;
+  padding: 20px;
 }
 
-.title p{
+p span {
+  font-weight: 700;
+}
 
+.qrcode img {
+  width: 250px;
+  height: 250px;
+}
+
+.qrcode {
+  border: 2px solid #000000;
+  margin: 20px;
+}
+
+.footer{
+  image-size: cover;
+  image-position: center;
+  image-repeat: no-repeat;
+  image-attachment: fixed;
 }
