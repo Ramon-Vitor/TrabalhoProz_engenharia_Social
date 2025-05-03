@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/styles/qrcodePage.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <h1>Novo Wi-fi da <a href="">Proz</a></h1>
-    <p>Mais Rapido, Mais seguro e Com tecnologia 5G.</p>
-    
-    <div class="qrcode" id="qrcode">
-        
-    </div>
-    
-    <p>Escaneie com seu telefone para ter acesso a esse novidade.</p>
-    
+
+    <main>
+        <div class="title">
+            <h1>Novo Wi-fi da Proz</h1>
+            <p>Mais Rapido, Mais seguro e Com tecnologia 5G.</p>
+        </div>
+
+        <div class="qrcode" id="qrcode"></div>
+
+        <div>
+            <p>Escaneie com seu telefone para ter acesso a esse novidade.</p>
+        </div>
+    </main>
+
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
 <script src="src/scripts/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
 
 </html>
