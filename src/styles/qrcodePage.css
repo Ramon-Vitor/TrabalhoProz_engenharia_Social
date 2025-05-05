@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap");
 
 body{
-  pointer-events: none;
+
 }
 
 main {
@@ -22,6 +22,7 @@ main {
   text-align: center;
   height: 100vh;
   wghth: 100vw;
+  pointer-events: none;
 }
 
 .logo {
@@ -102,6 +103,7 @@ p span {
 
 .footer {
   user-select: none;
+  pointer-events: none;
   width: 100vw;
   height: 45vh;
   image-size: cover;
