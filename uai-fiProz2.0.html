@@ -1,24 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faça login</title>
     <link rel="stylesheet" href="src/styles/qrcodePage.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Faça login</h1>
-    <p>
-        Por favor, faça login na rede utilizando seu e-mail.
-    </p>
+    <main class="page-login">
+    <div class="copy copy2">
+        <h1>Faça login</h1>
+        <p class="copy-text">
+            Por favor, faça login na rede utilizando sua mátricula.
+        </p>
+    </div>
     
-    <div class="formulario">
-        <form id="loginForm">
-            <input id="email" type="text" placeholder="Digite seu e-mail" />
-            <input id="senha" type="password" placeholder="Digite sua senha"/>
-            <button type="submit">Entrar</button>
+    <div class="formulario container2">
+
+            <button class="btn-login">
+            <img class="logo-facebook" src="https://www.gstatic.com/marketing-cms/assets/images/d5/dc/cfe9ce8b4425b410b49b7f2dd3f3/g.webp=s48-fcrop64=1,00000000ffffffff-rw" alt="">
+            <p>login</p>
+            </button>
+
+            <button class="btn-login">
+            <img class="logo-google" src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg" alt="">
+            <p>login</p>
+            </button>
+
+        <form id="loginForm" class="form-login">
+            <input id="email" type="text" placeholder="Mátricula" />
+            <input id="senha" type="password" placeholder="Senha"/>
+            <button class="entrar" type="submit">Entrar</button>
         </form>
     </div>
+    </main>
+    <div class="footer-login">
+        <img src="src/images/footer2.png" alt="">
+    </div>
+
     <script src="src/scripts/app.js"></script>
 </body>
 </html>
