@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap");
 
-body{
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -21,7 +23,7 @@ main {
   color: #7b7698;
   text-align: center;
   height: 100vh;
-  width: 100vw;
+  wghth: 100vw;
 
 }
 
@@ -47,6 +49,7 @@ main {
   color: transparent;
   background-image: linear-gradient(to bottom, #cba9ff, #e7b9ae);
   background-clip: text;
+  padding-bottom: 5px;
 }
 
 .copy-text {
@@ -85,6 +88,7 @@ main {
 
 main p {
   font-size: 1.6rem;
+  textwarp: wrap;
   padding: 20px;
 }
 
@@ -121,6 +125,16 @@ p span {
 
 /* pag 2 */
 
+.logo2{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .copy2{
   width: 80vw !important;
   height: 30vh;
@@ -140,6 +154,7 @@ p span {
   height: 46vh !important;
   width: 80vw;
   margin-bottom: 10vh;
+  animation: hover 1s ease-in-out;
 } 
 
 .form-login{
@@ -163,12 +178,24 @@ p span {
   -webkit-box-shadow: 0px 10px 14px 5px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 10px 14px 5px rgba(0,0,0,0.1);
   margin-top: 30px;
+  font-family: Helvetica, sans-serif;
+}
+
+.btn-login:hover{
+  cursor: pointer;
+  background-color:rgb(233, 233, 233);
+  animation: clik 0.5s ease-in-out;
 }
 
 .btn-login img{
   width: 10vw;
   height: 10vw;
+}
 
+.btn-login p{
+  font-size: 1rem;
+  font-weight: 700;
+  color:rgb(80, 80, 80);
 }
 
 input{
@@ -177,6 +204,7 @@ input{
   border: 1px solid #c0c0c0;
   border-radius: 6px;
   margin-top: 20px;
+  font-family: "Sora", sans-serif;
 }
 
 .entrar{
@@ -185,8 +213,19 @@ input{
   background-color: #ff7a00;
   color: white;
   border: none;
+  font-size: 1rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  border-radius: 6px;
   margin-top: 20px;
 }
+
+.entrar:hover{
+  cursor: pointer;
+  background-color:rgb(224, 108, 0);;
+  animation: clik 0.5s ease-in-out;
+}
+
 
 .footer-login {
   user-select: none;
@@ -195,4 +234,28 @@ input{
   height: 80vh;
   image-size: cover;
   image-position: center; 
+}
+
+@keyframes hover {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes clik {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
