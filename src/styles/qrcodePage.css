@@ -11,7 +11,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
 
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@ main {
   color: #7b7698;
   text-align: center;
   height: 100vh;
-  wghth: 100vw;
+  width: 100vw;
 
 }
 
@@ -85,7 +85,6 @@ main {
 
 main p {
   font-size: 1.6rem;
-  textwarp: wrap;
   padding: 20px;
 }
 
