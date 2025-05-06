@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="shortcut icon" href="src/images/iconProz.png" type="image/x-icon">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faça login</title>
-    <link rel="shortcut icon" href="src/images/iconProz.png" type="image/x-icon">
     <link rel="stylesheet" href="src/styles/qrcodePage.css">
     <link rel="stylesheet" href="src/styles/reset.css">
     <!-- Fonts -->
@@ -14,7 +14,11 @@
 </head>
 <body>
     <main class="page-login">
+        
     <div class="copy copy2">
+        <div class="logo logo2">
+            <img src="src/images/Logo-Proz.png" alt="">
+        </div>
         <h1>Faça login</h1>
         <p class="copy-text">
             Por favor, faça login na rede utilizando sua mátricula.
@@ -23,19 +27,19 @@
     
     <div class="formulario container2">
 
-            <button class="btn-login">
+            <button class="btn-login" id="btnLogin">
             <img class="logo-facebook" src="https://www.gstatic.com/marketing-cms/assets/images/d5/dc/cfe9ce8b4425b410b49b7f2dd3f3/g.webp=s48-fcrop64=1,00000000ffffffff-rw" alt="">
-            <p>login</p>
+            <p>Login</p>
             </button>
 
-            <button class="btn-login">
+            <button class="btn-login" id="btnLogin">
             <img class="logo-google" src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg" alt="">
-            <p>login</p>
+            <p>Login</p>
             </button>
 
         <form id="loginForm" class="form-login">
-            <input id="email" type="text" placeholder="Mátricula" />
-            <input id="senha" type="password" placeholder="Senha"/>
+            <input id="email" type="text" placeholder="  Mátricula" />
+            <input id="senha" type="password" placeholder="  Senha"/>
             <button class="entrar" type="submit">Entrar</button>
         </form>
     </div>
