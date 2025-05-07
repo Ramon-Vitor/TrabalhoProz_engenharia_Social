@@ -118,7 +118,7 @@ p span {
   image-attachment: fixed;
 }
 
-.footer, .footer-login img{
+.footer img, .footer-login img{
   width: 100%;
   height: 100%;
 }
